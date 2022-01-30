@@ -1,0 +1,15 @@
+<h1 style="border: 1px solid black; background-color:grey">{{title}}</h1>
+
+<h3 style="text-decoration: underline; margin-botton:3em">List of Members & Details</h3>
+
+
+<ul style="list-style: none; border 2px dashed darkblue"> 
+    {{#each members}}
+    <p style="border: 2px dashed darkblue; width:70%; margin-top:1em; margin-bottom:1em; margin:auto">
+         <li> Name: {{this.name}}</li>
+         <li> Email: {{this.email}}</li>
+         <li> Status: {{this.status}}</li>
+         <li> Id: {{this.id}}</li>
+</p>
+    {{/each}}
+</ul>
